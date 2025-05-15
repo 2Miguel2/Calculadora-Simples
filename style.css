@@ -1,0 +1,79 @@
+body {
+    background-color: #1e1e1ee3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.calculadora {
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px #cc2727bb;
+}
+
+.tela-wrapper {
+    position: relative;
+}
+
+#tela {
+    width: 94.8%;
+    height: 60px;
+    font-size: 24px;
+    margin-bottom: 12px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    background-color: #111;
+    color: white;
+    border-radius: 8px;
+}
+
+#placeholder {
+  position: absolute;
+  top: 28px;
+  right: 45px;
+  color: #555;
+  font-size: 20px;
+  animation: piscar 5s infinite;
+  pointer-events: none;
+  user-select: none;
+}
+
+@keyframes piscar {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 10px;
+}
+
+button {
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #3a3a3a;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #505050;
+}
+
+.igual {
+    grid-row: span 2;
+    background-color: 4da6ff;
+}
+
+.igual:hover {
+    background-color: #3399ff;
+}
+
